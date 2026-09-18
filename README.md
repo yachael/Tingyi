@@ -1,56 +1,54 @@
 # Tingyi / 听译
 
-Inspired by the Tower of Babel, Tingyi helps people understand each other across languages. It is optimized for in-person, face-to-face conversations, with live translated captions and personal headphone audio, starting on Windows. An Internet connection is required for translation.
+Tingyi is a translation app built for face-to-face conversations. Follow what someone is saying with bilingual captions, or listen to the translation through your headphones.
 
-**Windows preview: 0.2.5 — unsigned development preview for Windows 11 x64.** Validation is incomplete.
+The Tower of Babel is the idea behind Tingyi: helping people who speak different languages talk to each other.
 
-[Download the Windows preview](https://github.com/yachael/Tingyi/releases/download/v0.2.5-preview/Tingyi-Windows-x64-0.2.5-preview.exe) · [SHA-256 checksum](downloads/SHA256SUMS.txt) · [Version notes](docs/RELEASE-NOTES-0.2.5.md)
+- **Bilingual captions** — See the original speech and its translation together.
+- **Headphone audio** — Listen to translations without having to keep reading the screen.
+- **Floating captions** — Keep the conversation in view while using other windows.
+- **Flexible audio input** — Translate microphone input, computer audio, or both.
 
-## Get started
+**[Download for Windows](https://github.com/yachael/Tingyi/releases/download/v0.2.5-preview/Tingyi-Windows-x64-0.2.5-preview.exe)** · Windows 11 x64 · v0.2.5 preview
 
-1. Use **Windows 11 x64, build 22000 or later**. Download and run `Tingyi-Windows-x64-0.2.5-preview.exe`, a self-extracting archive. Choose a writable folder and click **Extract**. Open the extracted folder, then run `Tingyi.exe`. Keep all bundled files together. The .NET and Windows App SDK runtimes are included.
-2. Connect to the Internet. In Settings, add **your own OpenAI, Google or ByteDance API key** and set it as the provider default. No account or key is supplied. Your account needs the required service/model permissions and quota; API charges are yours. ByteDance requires a Volcengine voice console key, not an Ark key.
-3. Choose the audio source/device, provider, model and languages, then start translation. Allow Windows desktop microphone access when using a microphone. **Live audio is sent to the selected provider.**
-4. Captions work without headphones. For translated audio, select headphones recognized by Windows, play the test tone and **confirm that you hear it in the headphones you are wearing**. Reconfirm after device or relevant route changes. Speakers and unknown device types remain captions-only. System capture and translated output cannot share the same endpoint.
+[Getting started](docs/GETTING-STARTED.md) · [What's new](docs/RELEASE-NOTES-0.2.5.md)
 
-The package includes English, French and Chinese instructions. Use [SHA256SUMS.txt](downloads/SHA256SUMS.txt) to check the downloaded self-extracting EXE.
-
-## Interface preview
-
-The following English and French screenshots come from the **0.2.3 demonstration build**, with **demo captions**. They illustrate the interface and are not screenshots of the current 0.2.5 preview.
+## A look inside
 
 English interface:
 
-![English interface from the Tingyi 0.2.3 demonstration build, with demo captions](images/tingyi-interface-en.png)
+![Tingyi English interface with bilingual demo captions](images/tingyi-interface-en.png)
 
 French interface:
 
-![French interface from the Tingyi 0.2.3 demonstration build, with demo captions](images/tingyi-interface-fr.png)
+![Tingyi French interface with bilingual demo captions](images/tingyi-interface-fr.png)
 
-## Preview limitations
-
-Full physical-device and all-provider acceptance testing is incomplete, including long sessions, device unplugging, sleep/wake, clean Windows installations and installer workflows. Existing 0.2.5 checks used simulated connections/devices and local event replay, with no new translation API calls. The full pre-start dialog lacks complete offline test coverage; a successful key check or visible model does not establish live-session permissions, quota or compatibility. Recognition, translation, language routing and audio compatibility can fail. Windows may display an unsigned-app warning.
-
-API keys are stored in Windows Credential Manager. Caption history and optional recordings are local files without additional file encryption. Recording requires explicit activation and confirmation.
-
-## Distribution and roadmap
-
-This repository distributes portable Windows binaries in a self-extracting archive. No public open-source license has been chosen for the original Tingyi code, and no Tingyi application source archive is attached. Component terms and the required SoundTouch.Net corresponding source are included under `THIRD-PARTY-NOTICES.md` and `licenses/` in the extracted folder.
-
-Windows acceptance comes first. iPhone development is planned after Windows acceptance; no iPhone release is available here.
+*Interface examples from the 0.2.3 demo build.*
 
 ## Français
 
-Inspiré par la tour de Babel, Tingyi est optimisé pour les conversations en face à face avec des sous-titres traduits en direct et une traduction audio personnelle au casque. La version **0.2.5 est une préversion de développement non signée** pour Windows 11 x64, dont la validation reste incomplète.
+Tingyi est une application de traduction conçue pour les conversations en face à face. Suivez les échanges avec des sous-titres bilingues ou écoutez la traduction au casque.
 
-[Télécharger la préversion](https://github.com/yachael/Tingyi/releases/download/v0.2.5-preview/Tingyi-Windows-x64-0.2.5-preview.exe) et lancer l’archive auto-extractible `Tingyi-Windows-x64-0.2.5-preview.exe`. Choisir un dossier accessible en écriture et cliquer sur **Extract**, puis ouvrir le dossier extrait et lancer `Tingyi.exe`. Conserver tous les fichiers fournis. Une connexion Internet et **votre propre clé API** sont nécessaires ; les frais API vous incombent et l’audio est transmis au fournisseur choisi. Pour le son traduit, sélectionner un casque reconnu par Windows, écouter le son d’essai et confirmer qu’il sort du casque porté. Les sous-titres fonctionnent sans casque. Le développement iPhone est prévu après la validation de Windows.
+Inspiré de la tour de Babel, le projet aide les personnes qui parlent des langues différentes à discuter ensemble.
 
-Les captures ci-dessus proviennent de la version de démonstration **0.2.3** et contiennent des **sous-titres de démonstration** ; elles ne montrent pas la préversion actuelle 0.2.5.
+- **Sous-titres bilingues** : retrouvez les paroles originales et leur traduction.
+- **Traduction au casque** : écoutez sans devoir garder les yeux sur l'écran.
+- **Fenêtre flottante** : gardez les sous-titres sous les yeux pendant que vous utilisez d'autres fenêtres.
+- **Choix de la source audio** : microphone, son de l'ordinateur ou les deux.
 
-## 简体中文
+**[Télécharger pour Windows](https://github.com/yachael/Tingyi/releases/download/v0.2.5-preview/Tingyi-Windows-x64-0.2.5-preview.exe)** · [Premiers pas](docs/GETTING-STARTED.md#français)
 
-听译以“巴别塔”为核心概念，希望帮助人们跨越语言障碍，重点针对线下面对面对话优化，提供实时翻译字幕和个人耳机译音。当前 **0.2.5 为 Windows 11 x64 未签名开发预览版**，真实设备、全部服务商及长时间使用等尚未完整验收，不是正式稳定版。
+## 中文
 
-[下载预览版](https://github.com/yachael/Tingyi/releases/download/v0.2.5-preview/Tingyi-Windows-x64-0.2.5-preview.exe)，运行自解压文件 `Tingyi-Windows-x64-0.2.5-preview.exe`，选择可写文件夹并点击 **Extract**。进入展开后的文件夹，再运行 `Tingyi.exe`，保留所有配套文件。线下对话指面对面使用场景，翻译仍需联网并使用**自己的 API Key**，费用自理，实时音频发送给所选服务商。需要译音时，选择 Windows 识别的耳机，试听短音并确认声音来自佩戴中的耳机；无耳机仍可使用字幕。iPhone 开发计划在 Windows 验收后推进。
+听译是一款为面对面交流设计的翻译软件。聊天时，可以同时看原文和译文，也可以戴上耳机听翻译。
 
-上方英文、法语界面截图来自 **0.2.3 展示构建**，字幕为**演示内容**，不是当前 0.2.5 预览版的截图。
+巴别塔是这个项目的灵感来源。我们想做的很简单：让说不同语言的人，也能聊得起来。
+
+- **双语字幕**：原文和译文一起看，更容易跟上对话。
+- **耳机译音**：用耳机听翻译，聊天时不用一直盯着屏幕。
+- **悬浮字幕**：打开其他窗口，也能看见对话内容。
+- **灵活收音**：支持麦克风、电脑声音和混合输入，按场景选择。
+
+**[下载 Windows 版](https://github.com/yachael/Tingyi/releases/download/v0.2.5-preview/Tingyi-Windows-x64-0.2.5-preview.exe)** · [使用说明](docs/GETTING-STARTED.md#中文)
+
+目前先做好 Windows 版，之后再开发 iPhone 版。
