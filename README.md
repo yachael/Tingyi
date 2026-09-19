@@ -9,9 +9,9 @@ The Tower of Babel is the idea behind Tingyi: helping people who speak different
 - **Floating captions** — Keep the conversation in view while using other windows.
 - **Flexible audio input** — Translate microphone input, computer audio, or both.
 
-**[Download for Windows](https://github.com/yachael/Tingyi/releases/download/v0.2.5-preview/Tingyi-Windows-x64-0.2.5-preview.exe)** · Windows 11 x64 · v0.2.5 preview
+**[Download for Windows](https://github.com/yachael/Tingyi/releases/download/v0.2.9-preview/Tingyi-Windows-x64-0.2.9-preview.exe)** · Windows 11 x64 · v0.2.9 preview
 
-[Getting started](docs/GETTING-STARTED.md) · [What's new](docs/RELEASE-NOTES-0.2.5.md)
+[Getting started](docs/GETTING-STARTED.md) · [What's new](docs/RELEASE-NOTES-0.2.9.md)
 
 ## A look inside
 
@@ -36,7 +36,7 @@ Inspiré de la tour de Babel, le projet aide les personnes qui parlent des langu
 - **Fenêtre flottante** : gardez les sous-titres sous les yeux pendant que vous utilisez d'autres fenêtres.
 - **Choix de la source audio** : microphone, son de l'ordinateur ou les deux.
 
-**[Télécharger pour Windows](https://github.com/yachael/Tingyi/releases/download/v0.2.5-preview/Tingyi-Windows-x64-0.2.5-preview.exe)** · [Premiers pas](docs/GETTING-STARTED.md#français)
+**[Télécharger pour Windows](https://github.com/yachael/Tingyi/releases/download/v0.2.9-preview/Tingyi-Windows-x64-0.2.9-preview.exe)** · [Premiers pas](docs/GETTING-STARTED.md#français)
 
 ## 中文
 
@@ -49,6 +49,6 @@ Inspiré de la tour de Babel, le projet aide les personnes qui parlent des langu
 - **悬浮字幕**：打开其他窗口，也能看见对话内容。
 - **灵活收音**：支持麦克风、电脑声音和混合输入，按场景选择。
 
-**[下载 Windows 版](https://github.com/yachael/Tingyi/releases/download/v0.2.5-preview/Tingyi-Windows-x64-0.2.5-preview.exe)** · [使用说明](docs/GETTING-STARTED.md#中文)
+**[下载 Windows 版](https://github.com/yachael/Tingyi/releases/download/v0.2.9-preview/Tingyi-Windows-x64-0.2.9-preview.exe)** · [使用说明](docs/GETTING-STARTED.md#中文)
 
 目前先做好 Windows 版，之后再开发 iPhone 版。
