@@ -16,11 +16,11 @@ import urllib.request
 
 
 REPOSITORY = "yachael/Tingyi"
-TAG = "v0.2.5-preview"
-TITLE = "Tingyi 0.2.5 — Windows preview"
-FILENAME = "Tingyi-Windows-x64-0.2.5-preview.exe"
-SIZE = 45_055_367
-SHA256 = "4d8bda413dfe9b2085e5344a9621e38439a4c4fc948a668fd07de31cd0c0befa"
+TAG = "v0.2.9-preview"
+TITLE = "Tingyi 0.2.9 — Windows preview"
+FILENAME = "Tingyi-Windows-x64-0.2.9-preview.exe"
+SIZE = 45324167
+SHA256 = "41487fa463d0d239b60dc0209a2244ea8179c971386ab61bec0737dd6d96f663"
 PART_SIZE = 4 * 1024 * 1024
 PART_COUNT = (SIZE + PART_SIZE - 1) // PART_SIZE
 CHECKSUM_NAME = "SHA256SUMS.txt"
@@ -151,7 +151,7 @@ def assemble(parts_dir, commit, output_dir):
             name = f"{FILENAME}.part{index:02d}"
             expected_size = min(PART_SIZE, SIZE - (index - 1) * PART_SIZE)
             part = (local_part(parts_dir, name, expected_size) if parts_dir else
-                    raw_file(commit, f".distribution/0.2.5/{name}", expected_size))
+                    raw_file(commit, f".distribution/0.2.9/{name}", expected_size))
             if len(part) != expected_size:
                 raise ReleaseError(f"Part {index:02d} has an unexpected size.")
             digest.update(part)
@@ -269,15 +269,15 @@ def main():
         token = None
     executable = assemble(args.parts_dir, commit, args.output_dir)
     if args.publish:
-        notes_bytes = raw_file(commit, "docs/RELEASE-NOTES-0.2.5.md", 64 * 1024)
+        notes_bytes = raw_file(commit, "docs/RELEASE-NOTES-0.2.9.md", 64 * 1024)
         notes = notes_bytes.decode("utf-8-sig").strip()
-        if not notes or "0.2.5" not in notes:
+        if not notes or "0.2.9" not in notes:
             raise ReleaseError("Release notes are empty or identify an unexpected version.")
         publish(executable, commit, token, notes)
     else:
         if args.notes_file:
             notes = args.notes_file.read_text(encoding="utf-8-sig").strip()
-            if not notes or "0.2.5" not in notes:
+            if not notes or "0.2.9" not in notes:
                 raise ReleaseError("Local release notes are empty or identify an unexpected version.")
         print("Assembly only. No GitHub release was created or changed.")
 
