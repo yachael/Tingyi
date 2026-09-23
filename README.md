@@ -7,11 +7,12 @@ The Tower of Babel is the idea behind Tingyi: helping people who speak different
 - **Bilingual captions** — See the original speech and its translation together.
 - **Headphone audio** — Listen to translations without having to keep reading the screen.
 - **Floating captions** — Keep the conversation in view while using other windows.
+- **Local captions** — Optional models process speech and translation on your computer, with automatic CPU/GPU selection. Local mode produces text; models are downloaded separately.
 - **Flexible audio input** — Translate microphone input, computer audio, or both.
 
-**[Download for Windows](https://github.com/yachael/Tingyi/releases/download/v0.2.11-preview/Tingyi-Windows-x64-0.2.11-preview.exe)** · Windows 11 x64 · v0.2.11 preview
+**[Download for Windows](https://github.com/yachael/Tingyi/releases/download/v0.2.14-preview/Tingyi-Windows-x64-0.2.14-preview.zip)** · Windows 11 x64 · v0.2.14 preview
 
-[Getting started](docs/GETTING-STARTED.md) · [What's new](docs/RELEASE-NOTES-0.2.11.md)
+[Getting started](docs/GETTING-STARTED.md) · [What's new](docs/RELEASE-NOTES-0.2.14.md)
 
 ## A look inside
 
@@ -34,9 +35,10 @@ Inspiré de la tour de Babel, le projet aide les personnes qui parlent des langu
 - **Sous-titres bilingues** : retrouvez les paroles originales et leur traduction.
 - **Traduction au casque** : écoutez sans devoir garder les yeux sur l'écran.
 - **Fenêtre flottante** : gardez les sous-titres sous les yeux pendant que vous utilisez d'autres fenêtres.
+- **Sous-titres locaux** : des modèles optionnels traitent la voix et la traduction sur votre ordinateur, avec sélection automatique du CPU/GPU. Ce mode produit du texte ; les modèles se téléchargent séparément.
 - **Choix de la source audio** : microphone, son de l'ordinateur ou les deux.
 
-**[Télécharger pour Windows](https://github.com/yachael/Tingyi/releases/download/v0.2.11-preview/Tingyi-Windows-x64-0.2.11-preview.exe)** · [Premiers pas](docs/GETTING-STARTED.md#français)
+**[Télécharger pour Windows](https://github.com/yachael/Tingyi/releases/download/v0.2.14-preview/Tingyi-Windows-x64-0.2.14-preview.zip)** · [Premiers pas](docs/GETTING-STARTED.md#français)
 
 ## 中文
 
@@ -47,8 +49,9 @@ Inspiré de la tour de Babel, le projet aide les personnes qui parlent des langu
 - **双语字幕**：原文和译文一起看，更容易跟上对话。
 - **耳机译音**：用耳机听翻译，聊天时不用一直盯着屏幕。
 - **悬浮字幕**：打开其他窗口，也能看见对话内容。
+- **本地字幕**：可选模型在电脑上完成识别和翻译，分别自动选择 CPU/GPU。本地模式输出字幕，模型需另行下载。
 - **灵活收音**：支持麦克风、电脑声音和混合输入，按场景选择。
 
-**[下载 Windows 版](https://github.com/yachael/Tingyi/releases/download/v0.2.11-preview/Tingyi-Windows-x64-0.2.11-preview.exe)** · [使用说明](docs/GETTING-STARTED.md#中文)
+**[下载 Windows 版](https://github.com/yachael/Tingyi/releases/download/v0.2.14-preview/Tingyi-Windows-x64-0.2.14-preview.zip)** · [使用说明](docs/GETTING-STARTED.md#中文)
 
 目前先做好 Windows 版，之后再开发 iPhone 版。

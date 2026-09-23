@@ -2,42 +2,32 @@
 
 ## English
 
-Tingyi runs on Windows 11 x64 (build 22000 or later).
+1. [Download Tingyi 0.2.14](https://github.com/yachael/Tingyi/releases/download/v0.2.14-preview/Tingyi-Windows-x64-0.2.14-preview.zip) for Windows 11 x64.
+2. Extract the ZIP, open the folder and run `Tingyi.exe`. Keep all files together; runtimes are included.
+3. For cloud translation, configure your OpenAI, Google or ByteDance API account, then select your model, audio source and languages. Cloud use requires internet access and is billed by your provider.
+4. For local captions, open Local models, review the requirements and model terms, and install the optional models. The download is about 5 GB; optional Vulkan components enable automatic GPU selection. CPU can also be selected manually. Recommended: 16 GiB RAM and 15 GiB free disk space; available memory is checked before starting.
+5. Local mode provides text only and works offline after installation, without sending audio to a cloud service. For translated audio, choose a supported cloud provider, select headphones and confirm the test tone.
 
-1. Download the [Windows package](https://github.com/yachael/Tingyi/releases/download/v0.2.11-preview/Tingyi-Windows-x64-0.2.11-preview.exe), run it, choose a folder and click **Extract**.
-2. Open the extracted folder and start `Tingyi.exe`. Keep the bundled files together; the required runtimes are included.
-3. In Settings, add your own OpenAI, Google or ByteDance API key and choose your default provider. For ByteDance, use a Volcengine voice console key.
-4. Choose a dedicated translation model, your audio input and languages, then start translation.
-5. To hear translated audio, select your headphones and confirm the test tone. You can also use captions on their own.
+Caption history is stored locally and can be exported as TXT. Recording is optional. Cloud API keys are stored in Windows Credential Manager.
 
-Translation uses an internet connection and sends audio to your selected provider. Available languages, models and usage charges depend on that provider and your account.
-
-Captions are saved locally and can be exported as TXT. Recording is optional. API keys are stored in Windows Credential Manager.
-
-[Download checksum](../downloads/SHA256SUMS.txt) · [Technical notes](TECHNICAL-NOTES-0.2.11.md)
+[SHA-256 checksum](https://github.com/yachael/Tingyi/releases/download/v0.2.14-preview/SHA256SUMS.txt) · [Release notes](RELEASE-NOTES-0.2.14.md)
 
 ## Français
 
-Tingyi fonctionne sur Windows 11 x64 (build 22000 ou ultérieur).
+1. [Téléchargez Tingyi 0.2.14](https://github.com/yachael/Tingyi/releases/download/v0.2.14-preview/Tingyi-Windows-x64-0.2.14-preview.zip) pour Windows 11 x64.
+2. Décompressez le ZIP, ouvrez le dossier et lancez `Tingyi.exe`. Conservez tous les fichiers ensemble.
+3. Pour la traduction cloud, configurez votre compte API OpenAI, Google ou ByteDance, puis choisissez le modèle, la source audio et les langues. Une connexion Internet est nécessaire ; le fournisseur facture l’utilisation.
+4. Pour les sous-titres locaux, ouvrez Modèles locaux, consultez la configuration et les conditions des modèles, puis installez-les. Comptez environ 5 Go à télécharger. Vulkan est optionnel et permet la sélection automatique du GPU ; le CPU peut aussi être choisi manuellement. Configuration conseillée : 16 Gio de RAM et 15 Gio de disque libre. La mémoire disponible est vérifiée au démarrage.
+5. Le mode local produit uniquement du texte et fonctionne hors ligne après installation, sans envoyer l’audio au cloud. Pour écouter la traduction, choisissez un service cloud compatible, sélectionnez votre casque et confirmez le son d’essai.
 
-1. Téléchargez et lancez le [fichier Windows](https://github.com/yachael/Tingyi/releases/download/v0.2.11-preview/Tingyi-Windows-x64-0.2.11-preview.exe), choisissez un dossier, puis cliquez sur **Extract**.
-2. Ouvrez le dossier extrait et lancez `Tingyi.exe`. Conservez les fichiers fournis ensemble.
-3. Dans les paramètres, ajoutez votre clé API OpenAI, Google ou ByteDance, puis choisissez le fournisseur par défaut.
-4. Sélectionnez un modèle dédié à la traduction, la source audio et les langues, puis lancez la traduction.
-5. Pour écouter la traduction, sélectionnez votre casque et confirmez le son d'essai. Les sous-titres peuvent aussi s'utiliser seuls.
-
-La traduction nécessite une connexion Internet. L'audio est envoyé au fournisseur choisi, qui facture l'utilisation de son service. Les langues et les modèles disponibles dépendent de ce fournisseur et de votre compte.
+L’historique des sous-titres reste sur votre ordinateur et s’exporte en TXT. L’enregistrement est optionnel. Les clés API sont stockées dans le Gestionnaire d’informations d’identification Windows.
 
 ## 中文
 
-适用于 Windows 11 x64（系统版本 22000 或更新）。
+1. [下载听译 0.2.14](https://github.com/yachael/Tingyi/releases/download/v0.2.14-preview/Tingyi-Windows-x64-0.2.14-preview.zip)，适用于 Windows 11 x64。
+2. 解压 ZIP，进入文件夹，运行 `Tingyi.exe`。保留完整配套文件，运行库已包含在内。
+3. 使用云端翻译时，配置自己的 OpenAI、Google 或字节跳动 API 账户，再选择模型、收音来源和语言。云端模式需要联网，按服务商规则计费。
+4. 使用本地字幕时，打开“本地模型”页，查看配置与模型条款，再点击安装。模型下载约 5 GB，可选安装 Vulkan 组件以使用自动 GPU 选择，也可手动选择 CPU。建议 16 GiB 内存和 15 GiB 可用磁盘空间；启动时会检查当前可用内存。
+5. 本地模式只输出字幕，安装完成后可离线运行，不向云端发送语音。需要耳机译音时，选择支持该功能的云端服务，选好耳机并确认试听音。
 
-1. 下载并运行 [Windows 下载包](https://github.com/yachael/Tingyi/releases/download/v0.2.11-preview/Tingyi-Windows-x64-0.2.11-preview.exe)，选择文件夹，点击 **Extract** 解压。
-2. 打开解压后的文件夹，运行 `Tingyi.exe`。配套运行库已经包含在内，保留整个文件夹即可。
-3. 在设置中填写自己的 OpenAI、Google 或字节跳动 API Key，选好默认服务商。字节跳动使用火山引擎语音控制台的密钥。
-4. 选择专用翻译模型、收音来源和翻译语言，开始听译。
-5. 想听译音时，选择耳机并确认试听音；也可以只看字幕。
-
-翻译需要联网，音频发送给所选服务商，API 按服务商规则计费。可选语言和模型取决于服务商及账户。
-
-字幕保存在本机，可导出为 TXT；录音按需开启。API Key 保存在 Windows 凭据管理器中。
+字幕历史保存在本机，可导出为 TXT；录音按需开启。云端 API 密钥保存在 Windows 凭据管理器中。

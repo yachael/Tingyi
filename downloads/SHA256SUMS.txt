@@ -1,1 +1,1 @@
-c540087d780849aa3ca70f510a4e9ca7992452549646eaa36634b9833e5b5a68  Tingyi-Windows-x64-0.2.11-preview.exe
+c07ef7ff8ca4f9df3e4363e180586b13238af9d8c4cfd2c251382aecaaec13d3  Tingyi-Windows-x64-0.2.14-preview.zip
